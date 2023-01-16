@@ -22,3 +22,14 @@ novos_produtos = [{**produto, 'preco': produto['preco'] * 1.05} if produto['prec
                   for produto in produtos]
 
 print(*novos_produtos, sep='\n')
+
+
+lista = [n * 20 for n in range(10) if n < 5]
+print('lista', lista)
+
+
+produtos_filtrados = [
+    produto for produto in produtos if produto['preco'] > 20
+]
+
+print('Produtos filtrados', produtos_filtrados)
